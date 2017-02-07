@@ -1,5 +1,6 @@
 var Snoopy = function(top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  $node.addClass('snoopy');
 };
 
 Snoopy.prototype = Object.create(Dancer.prototype);
