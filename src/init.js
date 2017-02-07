@@ -1,6 +1,15 @@
 $(document).ready(function() {
   window.dancers = [];
 
+  $('body').on('click', '.dancer', function(event) {
+      // Get the dancer id
+      var dancer_id = $(this).data('dancer-id');
+      // Get the object reference
+      var obj = window.dancers[dancer_id];
+      // Move the dancer back to place
+      obj.backToPlace();
+  });
+
   $('.addDancerButton').on('click', function(event) {
     /* This function sets up the click handlers for the create-dancer
      * buttons on dancefloor.html. You should only need to make one small change to it.
@@ -23,10 +32,12 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random(),
-      $('body').width() * Math.random(),
-      Math.random() * 1000
+      $('body').height() * Math.random(), //top
+      $('body').width() * Math.random(), //left
+      Math.random() * 1000, //timeout
+      window.dancers.length //dancer_id
     );
+
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
@@ -36,4 +47,23 @@ $(document).ready(function() {
       window.dancers[i].lineUp();
     }
   });
+
+  $('.addGenericDancerButton').on('click', function(event) {
+    var dancerMakerFunctionNames = ['HairToss', 'GreenDress', 'GenericDancer'];
+
+    var arraySpot = Math.floor(Math.random() * dancerMakerFunctionNames.length);
+    var dancerMakerFunction = window[dancerMakerFunctionNames[arraySpot]];
+
+    var dancer = new dancerMakerFunction(
+      $('body').height() * Math.random(),
+      $('body').width() * Math.random(),
+      Math.random() * 1000,
+      window.dancers.length
+    );
+
+    window.dancers.push(dancer);
+    $('body').append(dancer.$node);
+  });
+
+
 });

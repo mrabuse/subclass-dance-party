@@ -5,3 +5,6 @@ var ZombieKid = function(top, left, timeBetweenSteps) {
 
 ZombieKid.prototype = Object.create(Dancer.prototype);
 ZombieKid.prototype.constructor = ZombieKid;
+ZombieKid.prototype.chase = function() {
+
+};
