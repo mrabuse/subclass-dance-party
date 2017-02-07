@@ -28,10 +28,16 @@ body, a:link, a:visited, a:active{
 
 .dancer{
   position:absolute;
-  background: url("img/magicdancefloor.gif") 0 0;
+  background: url("img/magicdancefloor.gif");
   width:517px;
   height:244px;
   /*border: 1px solid red;*/
+}
+
+.genericdude {
+  background-position: -272px -140px;
+  width: 60px;
+  height: 85px;
 }
 
 .woodstock {
