@@ -28,10 +28,10 @@ body, a:link, a:visited, a:active{
 
 .dancer{
   position:absolute;
-  background: url("img/genericPeanutDude.gif") no-repeat;
-  background-size:cover;
-  width:200px;
-  height:200px;
+  background: url("img/magicdancefloor.gif") 0 0;
+  width:517px;
+  height:244px;
+  /*border: 1px solid red;*/
 }
 
 .woodstock {
@@ -39,25 +39,38 @@ body, a:link, a:visited, a:active{
 }
 
 .charliebrown {
-  background-image:url("img/magicdancefloor.gif");
+  background-position: -400px -25px;
+  width: 60px;
+  height: 85px;
 }
 
 .linus {
-  background-image:url("img/magicdancefloor.gif");
+  background-position: -15px 107px;
+  width: 65px;
+  height: 65px;
 }
 
 .sally {
-  background-image:url("img/magicdancefloor.gif");
+  background-position: -105px 80px;
+  width: 50px;
+  height: 65px;
 }
 
 .hairtoss {
-  background-image:url("img/magicdancefloor.gif");
+  background-position: -350px 130px;
+  width: 80px;
+  height: 80px;
 }
 
 .greendress {
-  background-image:url("img/magicdancefloor.gif");
+  background-position: -180px 125px;
+  width: 60px;
+  height: 80px;
 }
 
 .zombiekid {
-  background-image:url("img/zombiekid.gif");
+  background:url("img/zombiekid.gif") 0 0;
+  background-size:cover;
+  width: 60px;
+  height: 80px;
 }
