@@ -1,6 +1,6 @@
 var Woodstock = function(top, left, timeBetweenSteps) {
-  Woodstock.call(this, top, left, timeBetweenSteps);
-  this.$node.addClass('woodstock');
+  Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('wgit oodstock');
   this.degree = 0;
   this.degreeIncrement = 10;
 };
