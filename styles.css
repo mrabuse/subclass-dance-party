@@ -16,16 +16,48 @@ body, a:link, a:visited, a:active{
 .topbar{
   height:32px;
   background-color: #555;
+  z-index: 1000;
 }
 .title{
   background-color: #777;
 }
-.dancer{
-  position:absolute;
-  width:100px;
+
+.musician {
+
 }
 
-.dancer.square {
-  border-radius: 0;
-  border-color: blue;
+.dancer{
+  position:absolute;
+  background: url("img/genericPeanutDude.gif") no-repeat;
+  background-size:cover;
+  width:200px;
+  height:200px;
+}
+
+.woodstock {
+  background-image:url("img/woodstock_00.png");
+}
+
+.charliebrown {
+  background-image:url("img/magicdancefloor.gif");
+}
+
+.linus {
+  background-image:url("img/magicdancefloor.gif");
+}
+
+.sally {
+  background-image:url("img/magicdancefloor.gif");
+}
+
+.hairtoss {
+  background-image:url("img/magicdancefloor.gif");
+}
+
+.greendress {
+  background-image:url("img/magicdancefloor.gif");
+}
+
+.zombiekid {
+  background-image:url("img/zombiekid.gif");
 }
