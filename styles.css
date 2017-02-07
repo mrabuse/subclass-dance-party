@@ -15,10 +15,6 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 
-.dancer:hover{
-  cursor:pointer;
-}
-
 .topbar{
   height:32px;
   background-color: #555;
